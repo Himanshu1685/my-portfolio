@@ -270,7 +270,38 @@ span{
         margin-top: 4rem;
     }
 }
-@media (max-width: 768px) {
+/* Basic header style */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  /* Navigation */
+  nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
     nav {
       display: flex;
       flex-direction: column;
@@ -289,6 +320,7 @@ span{
       align-items: flex-start;
     }
   }
+  
 
 /* Contact Section
 .contact {
