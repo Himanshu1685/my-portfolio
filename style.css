@@ -285,7 +285,7 @@ header {
   }
   
   /* Logo */
-  .logo {
+  /* .logo {
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
@@ -293,15 +293,15 @@ header {
   }
   
   /* Navigation */
-  nav a {
+  /* nav a {
     margin-left: 1.5rem;
     text-decoration: none;
     color: #000;
     font-weight: 500;
-  }
+  } */
   
   /* Responsive */
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     nav {
       display: flex;
       flex-direction: column;
@@ -319,8 +319,8 @@ header {
       flex-direction: column;
       align-items: flex-start;
     }
-  }
-   */
+  } */ 
+
 
 /* Contact Section
 .contact {
@@ -446,6 +446,102 @@ html {
     .education-box .details {
       font-size: 1.4rem;
     }
+  }
+                                                    /* SKILL SECTION */
+  .skills {
+    background-color: #111;
+    padding: 8rem 9%;
+    color: white;
+    text-align: center;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .skill-box {
+    text-align: left;
+  }
+  
+  .skill-box span {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .skill-box .bar {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 1.8rem;
+    margin-top: 0.5rem;
+  }
+  
+  .skill-box .fill {
+    background-color: #b74b4b;
+    height: 100%;
+    width: 0%;
+    transition: width 0.6s ease-in-out;
+  }
+  
+  @media (max-width: 768px) {
+    .skills-container {
+      padding: 0 2rem;
+    }
+  
+    .skill-box span {
+      font-size: 1.6rem;
+    }
+  }
+  
+  .skills-circle-container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+  }
+  
+  .skill {
+    text-align: center;
+  }
+  
+  .outer-ring {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: conic-gradient(#b74b4b 0% 88%, #222 88% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .ring2 {
+    background: conic-gradient(#b74b4b 0% 85%, #222 85% 100%);
+  }
+  
+  .inner-ring {
+    width: 120px;
+    height: 120px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #b74b4b;
+  }
+  
+  .skill p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
   }
   
 
