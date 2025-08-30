@@ -546,54 +546,146 @@ html {
   
 /* Experience */
 .experience {
-    background-color: #111;
-    color: white;
-    padding: 10rem 9%;
-    text-align: center;
-  }
-  
-  .experience-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem; /* spacing between experience items */
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .experience-item {
-    background-color: #1a1a1a;
-    padding: 3rem;
-    border-left: 5px solid #b74b4b;
-    border-radius: 1rem;
-    width: 100%;
-    text-align: left;
-    box-shadow: 0 0 20px rgba(183, 75, 75, 0.15);
-    transition: transform 0.3s ease;
-  }
-  
-  .experience-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 25px rgba(183, 75, 75, 0.3);
-  }
-  
-  .experience-item h3 {
-    font-size: 3rem;
-    color: #fff;
-    margin-bottom: 1rem;
-  }
-  
-  .experience-item .date {
-    font-size: 2rem;
-    color: #aaa;
-    margin-bottom: 1.5rem;
-  }
-  
-  .experience-item p {
-    font-size: 2rem;
-    color: #ccc;
-    line-height: 1.8;
-  }
+  background-color: #111;
+  color: white;
+  padding: 10rem 9%;
+  text-align: center;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem; /* spacing between experience items */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  background-color: #1a1a1a;
+  padding: 4rem;
+  border-left: 6px solid #b74b4b;
+  border-radius: 1rem;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0 0 25px rgba(183, 75, 75, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 40px rgba(183, 75, 75, 0.5);
+}
+
+.experience-item h3 {
+  font-size: 3.4rem;   /* Company + Role */
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.experience-item .date {
+  font-size: 2.4rem;   /* Dates */
+  font-style: italic;
+  color: #bbb;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.experience-item ul {
+  font-size: 2.4rem;   /* Much bigger bullet points */
+  color: #f1f1f1;      /* Brighter text for contrast */
+  line-height: 2.2;    /* More breathing room */
+  margin-left: 3rem;
+  list-style: none;    /* remove default bullets */
+  padding: 0;
+}
+
+.experience-item ul li {
+  margin-bottom: 2rem;
+  position: relative;
+  padding-left: 3rem;  /* space for custom bullet */
+}
+
+.experience-item p {
+  font-size: 2rem;    /* Slightly smaller */
+  color: #f1f1f1;
+  line-height: 1.9;
+  margin-bottom: 1.3rem;
+}
+
+/* Custom bullet style */
+.experience-item ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #b74b4b;      /* Accent bullet color */
+  font-size: 2.8rem;   /* Bigger bullet */
+  line-height: 1;
+}
+
+
+
+/* Certificates inside Experience */
+.certificate-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  max-width: 800px;
+  margin: 5rem auto 0; /* spacing above certificates */
+}
+
+.certificate-item {
+  background-color: #1a1a1a;
+  padding: 3rem;
+  border-left: 5px solid #4bb77b; /* green accent */
+  border-radius: 1rem;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(75, 183, 123, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.certificate-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(75, 183, 123, 0.3);
+}
+
+.certificate-item h3 {
+  font-size: 2.6rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.certificate-item .date {
+  font-size: 2rem;
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+.certificate-item p {
+  font-size: 1.9rem;
+  color: #ccc;
+  line-height: 1.8;
+}
+
+.certificate-link {
+  display: inline-block;
+  margin-top: 1.2rem;
+  font-size: 1.8rem;
+  color: #4bb77b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.certificate-link:hover {
+  color: #6fe0a5;
+}
+
+
+
 
   /* Projects Section */
 .projects {
