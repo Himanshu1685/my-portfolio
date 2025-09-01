@@ -1,62 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <title>Portfolio Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Portfolio Website</title>
 </head>
 <body>
-    <header >
+    <header>
         <a href="index.html" class="logo">Himanshu</a>
+      
+        <!-- Hidden checkbox -->
+        <input type="checkbox" id="menu-toggle">
+        <!-- Hamburger icon -->
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      
+        <nav>
+            <a href="folio.html" class="active">Home</a>
+            <a href="skill.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="project.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+      </header>
+      
 
+  <section class="home">
+    <div class="home-img">
+      <img src="https://res.cloudinary.com/dst0jxrxu/image/upload/v1747518046/main_dzuzai.jpg" alt="">
+    </div>
+    <div class="home-content">
+      <h1>Hi, It's <span>Himanshu</span></h1>
+      <h3 class="typing-text">I'm a <span></span></h3>
+      <p>Hi, I'm Himanshu Kumar Pandey, a final-year Computer Science student at NIT Rourkela with a passion for technology, problem-solving, and continuous learning. I enjoy building practical solutions through projects that blend strong fundamentals with real-world impact, especially in areas like web development, data analysis, machine learning, and software development. Welcome to my portfolio, where I showcase my work, skills, and experiences.</p>
+      
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/himanshu-pandey-649586256" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Himanshu1685" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://x.com/Himansh30250658" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/himanshu_pandey_1685/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div>
 
-        <nav> 
-        <a href="folio.html" class="active"> Home</a> 
-        <a href="skill.html">Skills</a> 
-        <a href="education.html" >Education</a> 
-        <a href="experience .html" >Experience</a> 
-        <a href="project.html" >Projects</a> 
-        <a href="contact.html" >Contact</a> 
-    </nav>
-          
-    </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="https://res.cloudinary.com/dst0jxrxu/image/upload/v1747518046/main_dzuzai.jpg" alt="">
-        </div>
-        <div class="home-content">
-            <h1>Hi, It's <span>Himanshu</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Hi, I'm Himanshu Kumar Pandey, a final-year Computer Science student at NIT Rourkela with a passion for technology, problem-solving, and continuous learning. I enjoy building practical solutions through projects that blend strong fundamentals with real-world impact, especially in areas like web development, data analysis, machine learning, and software development. Welcome to my portfolio, where I showcase my work, skills, and experiences.</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/himanshu-pandey-649586256" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/Himanshu1685" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://x.com/Himansh30250658" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://www.instagram.com/himanshu_pandey_1685/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                
-                
-                <a href="https://drive.google.com/file/d/1OBchSkWHpVbOGmknesYHPLoMy1JthXK5/view?usp=sharing" class="btn" target="_blank">
-                    My Resume
-                </a>
-                
-        </div>
-    </section>     
+      <a href="https://drive.google.com/file/d/1OBchSkWHpVbOGmknesYHPLoMy1JthXK5/view?usp=sharing" class="btn" target="_blank">
+        My Resume
+      </a>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Himanshu. All rights reserved.</p>
-    </footer>
-    
+  <footer>
+    <p>&copy; 2025 Himanshu. All rights reserved.</p>
+  </footer>
 </body>
 </html>
